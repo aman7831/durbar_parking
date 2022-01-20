@@ -1,0 +1,195 @@
+body
+{
+    font-family: verdana;
+    overflow-x: hidden;
+    background-size: cover;
+}
+nav .navbar
+{
+    background-color: rgb(10, 9, 9);
+    position: sticky;
+}
+.navbar a{
+    float:left;
+    display: inline;
+    color: rgba(202,9,5,255);
+    text-align: cemter; 
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 24px;
+   color: rgba(241, 228, 228, 0.747);
+}
+.navbar a:hover{
+    color:rgba(253,88,88,255);
+    border-bottom: 2px solid rgba(253,88,88,255);
+}
+.navbar h2{
+    float:left;
+    display: inline;
+    color: rgba(202,9,5,255);
+    text-align: cemter; 
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 24px;
+   color: rgba(241, 228, 228, 0.747);
+}
+.navbar h2:hover{
+    color: rgba(253,88,88,255);
+    border-top: 2px solid rgba(253,88,88,255);
+    border-left: 2px solid rgba(253,88,88,255);
+    border-right: 2px solid rgba(253,88,88,255);
+    border-bottom: 2px solid rgba(253,88,88,255);
+}
+.side-nav
+{
+    height: 100%;
+    width: 0px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    overflow-x:hidden;
+    padding-top: 60px;
+    transition: 0.8s;
+}
+.side-nav a{
+    list-style: none;
+    padding:10px 10px 10px 0px;
+    text-decoration: none;
+    font-size: 22px;
+    color: rgba(253,88,88,255);
+    display: block;
+    transition: 0.3s;
+    text-align: center;
+
+}
+.side-nav a:hover{
+    color:white;
+}
+
+.side-nav .btn-close
+{
+    position: absolute;
+    top:0;
+    right: 22px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+#main{
+    transition:margin-left 0.8s;
+    padding: 20px;
+    overflow: hidden;
+    width: 100%;
+}
+@media(max-width:560px){
+.navbar0nav{display:none}
+}
+
+#main h3
+{
+    color: rgba(253,88,88,255);
+}
+#main h3:hover
+{
+    color: white;
+}
+.parkinglot
+{
+    padding: 15px 30px;;
+    border: 2px solid rgba(253,88,88,255);
+    background-color: rgba(90, 10, 10, 0.589);
+    border-radius: 5px;
+    margin-right: 4%;
+    margin-top: 2%;
+}
+.parkinglot:hover
+{
+    padding: 15px 30px;;
+    border: 2px solid rgba(253,88,88,255);
+    background-color: rgba(90, 10, 10, 0.589);
+    border-radius: 5px;
+    margin-right: 4%;
+    margin-top: 2%;
+    border-top: 2px solid white;
+    border-left: 2px solid white;
+    border-right: 2px solid white;
+    border-bottom: 2px solid white;
+}
+.border
+{
+    padding: 1px 29px;;
+    border: 1px solid white;
+    background-color: whitesmoke;
+    border-radius: 5px;
+    margin-right: 15px;
+    margin-top: 1px;
+    position: relative;
+}
+#main .start
+{
+    font-family: sans-serif;
+    font-size: 24px;
+    color: greenyellow;
+    padding: 15px 30px;;
+    background-color: rgba(90, 10, 10, 0.589);
+    border-radius: 5px;
+    margin-right: 4%;
+    margin-top: 2%;
+    border-top: 2px solid greenyellow;
+    border-left: 2px solid greenyellow;
+    border-right: 2px solid greenyellow;
+    border-bottom: 2px solid greenyellow;
+}
+#main .start:hover{
+color: rgba(253,88,88,255);
+    border-top: 2px solid green;
+    border-left: 2px solid green;
+    border-right: 2px solid green;
+    border-bottom: 2px solid green;
+}
+#main .end
+{
+    font-family: sans-serif;
+    font-size: 24px;
+    padding: 15px 30px;
+    color: rgba(255, 255, 0, 0.76);
+    background-color: rgb(61, 3, 3);
+    border-radius: 5px;
+    margin-right: 4%;
+    margin-top: 2%;
+    border-top: 2px solid yellow;
+    border-left: 2px solid yellow;
+    border-right: 2px solid yellow;
+    border-bottom: 2px solid yellow;
+}
+#main .end:hover{
+    color: rgba(253,88,88,255);
+        border-top: 2px solid rgba(253,88,88,255);
+        border-left: 2px solid rgba(253,88,88,255);
+        border-right: 2px solid rgba(253,88,88,255);
+        border-bottom: 2px solid rgba(253,88,88,255);
+    }
+#main .n1
+{
+    font-family: sans-serif;
+    font-size: 18px;
+    color: white;
+}
+#main .n2
+{
+    font-family: sans-serif;
+    font-size: 18px;
+    color: white;
+}
+#main .n3
+{
+    font-family: sans-serif;
+    font-size: 18px;
+    color: white;
+}
+.parking 
+{
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.699);
+}

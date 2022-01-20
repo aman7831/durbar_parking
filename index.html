@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Parking system</title>
+    
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
+
+
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+        <link rel="stylesheet" href="css/bootstrap.css">
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+
+        <script src="js/jquery-3.3.1.slim.min.js"></script>
+        <script type="text/javascript" src="jquery.js"></script>
+        <script src="js/popper.min.js"></script>
+
+        <script src="js/bootstrap"></script>
+        <script src="js/bootstrap.min.js"></script>
+
+        <link rel="stylesheet" href="css/main.css">
+        <script src="js/main.js"></script>
+    </head>
+        <style>
+        body
+        {
+            background-image: url('img/bg.png');
+            background-color: rgba(0, 0, 0, 0.767);
+            overflow: hidden;
+        }
+        .container{
+			overflow: hidden; 
+			position: relative;
+			margin: auto;
+		}
+    .car{
+        width: 150px;
+        height: 80px;
+        background: url('img/car.png') no-repeat center;
+        background-size: cover;
+        position: absolute;
+        transition: all 0.1s;
+    }
+</style>
+<body>
+        <div class="row" style="background-color: rgba(0, 0, 0, 0.658);">
+            <div class="col-md-4">
+                <nav class="navbar">
+                    <span class="openslide">
+                        <a href="#" onclick="opensidemenu()">
+                            <i class="fas fa-bars"><span style="margin-left: 20px">Menu</span></i>
+                        </a>
+                    </span>
+                </nav>
+                <div id="side-menu" class="side-nav">
+                    <a href="#" class="btn-close" onclick="closesidemenu()">&times;</a>
+                    <a href="#">Home</a>
+                    <a href="#">Services</a>
+                    <a href="#">Contact</a>
+                    <a href="#">About</a>
+                </div>
+            </div>
+                
+            <div class="col-md-8">
+               <div class="navbar"><h2>Parking management system</h2></div>
+            </div>
+        </div>
+          
+        
+        <div class="parking">
+            <div id="main">
+                <h3>Welcome to Durbarmarg</h3>
+                    <div class="parking">
+                        <div class="row" style="margin: 5px; padding: 10px;">                    
+                            <div class="col-md-2"><button class="start"><span>Start</span></button></div>
+                            <div class="col-md-1"><button class="parkinglot"><span class="n1">P1</span></button></div>
+                            <div class="col-md-1"><button class="parkinglot"><span class="n1">P2</span></button></div>
+                            <div class="col-md-1"><button class="parkinglot"><span class="n1">P3</span></button></div>
+                            <div class="col-md-1"><button class="parkinglot"><span class="n1">P4</span></button></div>
+                            <div class="col-md-1"><button class="parkinglot"><span class="n1">P5</span></button></div>
+                            <div class="col-md-1"><button class="parkinglot"><span class="n1">P6</span></button></div>
+                            <div class="col-md-1"><button class="parkinglot"><span class="n1">P7</span></button></div>
+                            <div class="col-md-1"><button class="parkinglot"><span class="n1">P8</span></button></div>
+                            <div class="col-md-1"><button class="parkinglot"><span class="n1">P9</span></button></div>
+                        </div>
+
+                        <hr style="border-bottom: 2px solid white;">
+                        
+                        <div class="container">
+                            <div class="car"></div>
+                                <br><br><br><br>
+                                <div class="row" style="margin: 5px; padding: 10px;">  
+                                    
+                                    <!-- <div class="col-md-1"><a class="border"><span class="n1"></span></a></div>  
+                                    <div class="col-md-1"><a class="border"><span class="n1"></span></a></div> 
+                                    <div class="col-md-1"><a class="border"><span class="n1"></span></a></div> 
+                                    <div class="col-md-1"><a class="border"><span class="n1"></span></a></div>                 
+                                    <div class="col-md-1"><a class="border"><span class="n1"></span></a></div>
+                                    <div class="col-md-1"><a class="border"><span class="n1"></span></a></div>
+                                    <div class="col-md-1"><a class="border"><span class="n1"></span></a></div>
+                                    <div class="col-md-1"><a class="border"><span class="n1"></span></a></div>
+                                    <div class="col-md-1"><a class="border"><span class="n1"></span></a></div>
+                                    <div class="col-md-1"><a class="border"><span class="n1"></span></a></div>
+                                    <div class="col-md-1"><a class="border"><span class="n1"></span></a></div>  -->
+                                </div>
+                                <br><br><br><br>
+                            </div>
+                                    
+                        <hr style="border-top: 2px solid white;">
+                        <div class="row" style="margin: 5px; padding: 10px;">                    
+                            <div class="col-md-2"><a href=index.html><button class="end"><span>End</span></button></a></div>
+                            <div class="col-md-1"><button class="parkinglot"><span class="n1">P18</span></button></div>
+                            <div class="col-md-1"><button class="parkinglot"><span class="n1">P17</span></button></div>
+                            <div class="col-md-1"><button class="parkinglot"><span class="n1">P16</span></button></div>
+                            <div class="col-md-1"><button class="parkinglot"><span class="n1">P15</span></button></div>
+                            <div class="col-md-1"><button class="parkinglot"><span class="n1">P14</span></button></div>
+                            <div class="col-md-1"><button class="parkinglot"><span class="n1">P13</span></button></div>
+                            <div class="col-md-1"><button class="parkinglot"><span class="n1">P12</span></button></div>
+                            <div class="col-md-1"><button class="parkinglot"><span class="n1">P11</span></button></div>
+                            <div class="col-md-1"><button class="parkinglot"><span class="n1">P10</span></button></div>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+      
+    </body>
+    <script type="text/javascript">
+		var x_axis = 0,
+			y_axis = 0;
+
+		document.onkeydown = check_key;
+
+		function check_key(e){
+			e = e || window.event;
+
+			if(e.keyCode == '38'){
+				mov_car("up");
+			}else if(e.keyCode == '40'){
+				mov_car("down");
+			}else if(e.keyCode == '37'){
+				mov_car("left");
+			}else if(e.keyCode == '39'){
+				mov_car("right");
+			}
+		}
+
+		function mov_car(a){
+			if(a == 'right'){
+				x_axis = x_axis + 10;
+				$(".car").css({"transform":"translate("+x_axis+"px,"+y_axis+"px)  rotate(0deg)"});
+			}else if(a == 'left'){
+				x_axis = x_axis - 10;
+				$(".car").css({"transform":"translate("+x_axis+"px,"+y_axis+"px) rotate(180deg)"});
+			}else if(a == 'up'){
+				y_axis = y_axis - 10;
+				$(".car").css({"transform":"translate("+x_axis+"px,"+y_axis+"px)rotate(270deg)"});
+			}else if(a == 'down'){
+				y_axis = y_axis + 10;
+				$(".car").css({"transform":"translate("+x_axis+"px,"+y_axis+"px) rotate(90deg)"});
+			}
+		}
+	</script>
+</html>
